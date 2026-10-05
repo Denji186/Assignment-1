@@ -3584,13 +3584,13 @@
             ]
         },
         {
-            "name": "New action map1",
-            "id": "70353e37-4d82-407a-8d6b-03d10346a3c2",
+            "name": "Shooting Action map",
+            "id": "d95b6375-32b3-4291-a997-ea04db30cfc5",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Instantiate",
                     "type": "Button",
-                    "id": "e0be2da1-8713-47cd-8713-1300ae22f05a",
+                    "id": "26061893-843f-49c0-b7a1-51fcf9fdb7d0",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -3601,12 +3601,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "c4aaaaa1-e88f-44b2-bd9f-1a2c11277e74",
-                    "path": "",
+                    "id": "9f396eed-e72e-44f2-b9bd-c33235f94a35",
+                    "path": "<XRController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Instantiate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
