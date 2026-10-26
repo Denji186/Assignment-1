@@ -1,4 +1,5 @@
 
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -19,6 +20,8 @@ public class NpcFollow : MonoBehaviour
     private Animator animator;
 
     private bool isChasing = false;
+
+    public bool closeDistance = false;
 
     void Start()
     {
@@ -63,6 +66,13 @@ public class NpcFollow : MonoBehaviour
             agent.SetDestination(xrPlayer.position);
         }
 
+        if(agent.stoppingDistance >= distance)
+        {
+            closeDistance = true;
+            animator.SetBool("distance", true);
+        }
+
+
         // Update Idle/Walk animations
         float animationSpeed = Mathf.Clamp01(
             agent.velocity.magnitude / Mathf.Max(movementSpeed, 0.01f)
@@ -90,5 +100,12 @@ public class NpcFollow : MonoBehaviour
             transform.position,
             loseTargetRadius
         );
+
+        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
     }
 }
