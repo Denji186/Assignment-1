@@ -70,7 +70,7 @@ public class NpcFollow : MonoBehaviour
         {
             closeDistance = true;
             animator.SetBool("distance", true);
-        }
+        }   
 
 
         // Update Idle/Walk animations

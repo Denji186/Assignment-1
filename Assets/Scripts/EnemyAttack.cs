@@ -17,16 +17,23 @@ public class EnemyAttack : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy Hands"))
+       
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Enemy Hands"))
         {
             if (playerHealth > 0)
             {
                 playerHealth -= 25f;
+                Debug.Log(playerHealth);
             }
             else
             {
                 playerHealth = 0f;
-                GameOverUI.SetActive(true);
+                Debug.Log(playerHealth);
+                //GameOverUI.SetActive(true);
                 Time.timeScale = 0f; // pause the game
             }
         }
