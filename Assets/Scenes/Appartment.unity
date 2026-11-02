@@ -342,7 +342,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54307586, g: 0.6110716, b: 0.8490566, a: 1}
   m_Intensity: 1
   m_Range: 4
   m_SpotAngle: 30
@@ -8672,8 +8672,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.2958209, z: -0, w: 0.95524347}
   m_LocalPosition: {x: 27.497, y: 4.904, z: -18.442}
-  m_LocalScale: {x: 0.99239707, y: 1.2280914, z: 0.99239707}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.21927, y: 1.3612499, z: 1.1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 336783247}
   m_Father: {fileID: 0}
@@ -15039,7 +15039,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54307586, g: 0.6110716, b: 0.8490566, a: 1}
   m_Intensity: 2
   m_Range: 3
   m_SpotAngle: 30
@@ -20466,7 +20466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 21.177, y: 5.942}
+  m_AnchoredPosition: {x: 21.2, y: 5.942}
   m_SizeDelta: {x: 1580, y: 920}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1268091393
@@ -23492,7 +23492,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473438669}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 7b34d321b3b62504a9e4470fcd99e00e, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 133aa1ff34273ea47a73617d4d8bff54, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -26459,8 +26459,8 @@ Camera:
   m_GameObject: {fileID: 1650169121}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -26873,7 +26873,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54307586, g: 0.6110716, b: 0.8490566, a: 1}
   m_Intensity: 2
   m_Range: 4
   m_SpotAngle: 30
@@ -31933,7 +31933,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54307586, g: 0.6110716, b: 0.8490566, a: 1}
   m_Intensity: 2
   m_Range: 4
   m_SpotAngle: 30
@@ -32060,7 +32060,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54307586, g: 0.6110716, b: 0.8490566, a: 1}
   m_Intensity: 3
   m_Range: 2
   m_SpotAngle: 30
@@ -33325,7 +33325,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54307586, g: 0.6110716, b: 0.8490566, a: 1}
   m_Intensity: 1
   m_Range: 4
   m_SpotAngle: 30
