@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy Hands
+  - Axe
   layers:
   - Default
   - TransparentFX

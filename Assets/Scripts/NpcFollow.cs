@@ -23,6 +23,8 @@ public class NpcFollow : MonoBehaviour
 
     public bool closeDistance = false;
 
+    public PlayerAttack playerAttack;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -70,8 +72,19 @@ public class NpcFollow : MonoBehaviour
         {
             closeDistance = true;
             animator.SetBool("distance", true);
-        }   
+        }
 
+        if (agent.stoppingDistance <= distance)
+        {
+            closeDistance = false;
+            animator.SetBool("distance", false);
+        }
+
+
+        if (playerAttack.IsDie == true)
+        {
+            animator.SetBool("IsDie", true);
+        }
 
         // Update Idle/Walk animations
         float animationSpeed = Mathf.Clamp01(

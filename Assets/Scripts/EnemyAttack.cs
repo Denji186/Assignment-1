@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyAttack : MonoBehaviour
 {
     public float playerHealth = 100f;
     public GameObject GameOverUI;
+    public Image healthbar;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -11,12 +13,14 @@ public class EnemyAttack : MonoBehaviour
         {
             if (playerHealth > 0)
             {
-                playerHealth -= 15f;
+                playerHealth -= 0.15f;
+                healthbar.fillAmount -= 0.15f;
                 Debug.Log(playerHealth);
             }
             else
             {
                 playerHealth = 0f;
+                healthbar.fillAmount = 0;
                 Debug.Log(playerHealth);
                 //GameOverUI.SetActive(true);
                 Time.timeScale = 0f; // pause the game
