@@ -18,6 +18,7 @@ public class EnemyAttack : MonoBehaviour
             {
                 playerHealth -= 0.15f;
                 healthbar.fillAmount -= 0.15f;
+                enemyAttackAudio.loop = false;
                 enemyAttackAudio.PlayOneShot(enemyAttackClip);
                 Debug.Log(playerHealth);
             }

@@ -15662,6 +15662,7 @@ MonoBehaviour:
   closeDistance: 0
   playerAttack: {fileID: 1531544061}
   enemyAudioPlayer: {fileID: 291197380}
+  playerAudioPlayer: {fileID: 1469950806}
   enemyDeath: {fileID: 8300000, guid: a48d7ab7384f2484eaa6651bf7185a73, type: 3}
 --- !u!95 &291197374
 Animator:
@@ -88874,7 +88875,7 @@ Transform:
   m_GameObject: {fileID: 1469950798}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.84486556, z: -0, w: 0.53497875}
-  m_LocalPosition: {x: 264.75, y: 5.605, z: -71.99}
+  m_LocalPosition: {x: 264.75, y: 5.82, z: -71.99}
   m_LocalScale: {x: 1.21927, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 1
   m_Children:

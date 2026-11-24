@@ -26,6 +26,8 @@ public class NpcFollow : MonoBehaviour
     public PlayerAttack playerAttack;
 
     public AudioSource enemyAudioPlayer;
+   
+    public AudioSource playerAudioPlayer;
     public AudioClip enemyDeath;
 
     void Start()
@@ -75,8 +77,7 @@ public class NpcFollow : MonoBehaviour
         {
             closeDistance = true;
             animator.SetBool("distance", true);
-            enemyAudioPlayer.loop = false;
-            enemyAudioPlayer.Pause();
+            enemyAudioPlayer.Stop();
         }
 
         if (agent.stoppingDistance <= distance)
@@ -90,16 +91,15 @@ public class NpcFollow : MonoBehaviour
         {
             animator.SetBool("IsDie", true);
             agent.speed = 0;
-            enemyAudioPlayer.Play();
-            enemyAudioPlayer.PlayOneShot(enemyDeath);
-            enemyAudioPlayer.Stop();
+            playerAudioPlayer.volume = 0.5f;
+            playerAudioPlayer.PlayOneShot(enemyDeath);
+            
         }
 
         // Update Idle/Walk animations
         float animationSpeed = Mathf.Clamp01(
             agent.velocity.magnitude / Mathf.Max(movementSpeed, 0.01f)
         );
-
         animator.SetFloat(
             "speed",
             animationSpeed,
