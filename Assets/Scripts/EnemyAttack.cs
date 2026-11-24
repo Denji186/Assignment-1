@@ -7,6 +7,9 @@ public class EnemyAttack : MonoBehaviour
     public GameObject GameOverUI;
     public Image healthbar;
 
+    public AudioSource enemyAttackAudio;
+    public AudioClip enemyAttackClip;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy Hands"))
@@ -15,6 +18,7 @@ public class EnemyAttack : MonoBehaviour
             {
                 playerHealth -= 0.15f;
                 healthbar.fillAmount -= 0.15f;
+                enemyAttackAudio.PlayOneShot(enemyAttackClip);
                 Debug.Log(playerHealth);
             }
             else
