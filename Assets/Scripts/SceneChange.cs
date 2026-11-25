@@ -8,7 +8,7 @@ public class SceneChange : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("CityNight");
+            SceneManager.LoadScene("3 CityNight Scene");
         }
     }
 }
