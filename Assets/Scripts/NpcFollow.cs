@@ -77,7 +77,7 @@ public class NpcFollow : MonoBehaviour
         {
             closeDistance = true;
             animator.SetBool("distance", true);
-            enemyAudioPlayer.Stop();
+            
         }
 
         if (agent.stoppingDistance <= distance)
@@ -91,7 +91,6 @@ public class NpcFollow : MonoBehaviour
         {
             animator.SetBool("IsDie", true);
             agent.speed = 0;
-            playerAudioPlayer.volume = 0.5f;
             playerAudioPlayer.PlayOneShot(enemyDeath);
             
         }
